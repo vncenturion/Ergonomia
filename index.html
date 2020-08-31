@@ -63,66 +63,7 @@
             <div class="py-5 text-center">
                 <img class="d-block mx-auto mb-4" src="Imagens/doctor.svg" alt="" width="72" height="72">
                 <h2>Formulário Rapid Entire Body Assessment - REBA©</h2>
-                <p class="lead">Below is an example form built entirely with Bootstrap’s form controls.</p>
-            </div>
-
-            <form class="container">
-                
-                <div class="row">
-                    <div class="col">
-                        <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required>
-                            <option value="">Choose...</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please provide a valid state.
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required>
-                            <option value="">Choose...</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please provide a valid state.
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required>
-                            <option value="">Choose...</option>
-                            <option>California</option>
-                            <option>California</option>
-                            <option>California</option>
-                            <option>California</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please provide a valid state.
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </form>
-
-            <div class="py-5 text-center">
-                <img class="d-block mx-auto mb-4" src="Imagens/doctor.svg" alt="" width="72" height="72">
-                <h2>Formulário Rapid Upper Limb Assessment - RULA©</h2>
-                <p class="lead">Below is an example form built entirely with Bootstrap’s form controls.</p>
+                <p class="lead">REBA is a Rapid Entire Body Assessment tool which is being developed to investigate dynamic activities where there is a risk of work related musculoskeletal disorders. It is to be used to investigate tasks for which RULA (Rapid Upper Limb Assessment) was not designed.</p>
             </div>
 
             <form class="container">
@@ -130,7 +71,7 @@
                 <div class="row">
                     <div class="col">
                         <label for="state">Upper arms</label>
-                        <select class="custom-select d-block w-100" id="state" required>
+                        <select class="custom-select d-block w-100" id="u_arms" required>
                             <option value="">Escolha...</option>
                             <option>1</option>
                             <option>2</option>
@@ -138,77 +79,212 @@
                             <option>4</option>
                         </select>
                         <div class="invalid-feedback">
-                            Please provide a valid state.
+                            Favor inserir uma entrada válida.
                         </div>
-                    </div>
-                    
+                    </div>    
                 </div>
+                
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="shoulder">
+                    <label class="custom-control-label" for="shoulder">Shoulder is raised</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="abducted">
+                    <label class="custom-control-label" for="abducted">Upper arm is abducted</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="leaning">
+                    <label class="custom-control-label" for="leaning">Leaning or supporting the weight of the arm</label>
+                </div>
+                <hr class="mb-4">
                 <div class="row">
                     <div class="col">
                         <label for="state">Lower arms</label>
-                        <select class="custom-select d-block w-100" id="state" required>
+                        <select class="custom-select d-block w-100" id="l_arms" required>
                             <option value="">Escolha...</option>
                             <option>1</option>
                             <option>2</option>
                         </select>
                         <div class="invalid-feedback">
-                            Please provide a valid state.
+                            Favor inserir uma entrada válida.
                         </div>
                     </div>
-                    
                 </div>
+                <hr class="mb-4">
                 <div class="row">
                     <div class="col">
                         <label for="state">Wrist</label>
-                        <select class="custom-select d-block w-100" id="state" required>
+                        <select class="custom-select d-block w-100" id="wrist" required>
                             <option value="">Escolha...</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Favor inserir uma entrada válida.
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="w_twist">
+                    <label class="custom-control-label" for="w_twist">Wrist is deviated or twisted</label>
+                </div>
+
+                <hr class="mb-4">
+                <div class="row">
+                    <div class="col">
+                        <label for="state">Force or Load</label>
+                        <select class="custom-select d-block w-100" id="force" required>
+                            <option value="">Escolha...</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Favor inserir uma entrada válida.
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="shock_force">
+                    <label class="custom-control-label" for="shock_force">Shock or rapid build up of force</label>
+                </div>
+                <hr class="mb-4">
+                <p>Posture</p>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="static">
+                    <label class="custom-control-label" for="static">1 or mor body parts are static (held for longer than 1 minute)</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="repeat">
+                    <label class="custom-control-label" for="repeat">Repeated small range actions (repeated more than 4 times per minute)</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="p_changes">
+                    <label class="custom-control-label" for="p_changes">Action causes rapid large range changes in postures or an unstable base</label>
+                </div>
+                <hr class="mb-4">
+                <div class="row">
+                    <div class="col">
+                        <label for="state">Coupling</label>
+                        <select class="custom-select d-block w-100" id="coupling" required>
+                            <option value="">Escolha...</option>
+                            <option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                         </select>
                         <div class="invalid-feedback">
-                            Please provide a valid state.
+                            Favor inserir uma entrada válida.
                         </div>
                     </div>
-                    
                 </div>
 
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Gerar relatório REBA</button>
+            </form>
+
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="Imagens/doctor.svg" alt="" width="72" height="72">
+                <h2>Formulário Rapid Upper Limb Assessment - RULA©</h2>
+                <p class="lead">RULA (rapid upper limb assessment) is a survey method developed for use in ergonomics investigations of workplaces where work-related upper limb disorders are reported. This tool requires no special equipment in providing a quick assessment of the postures of the neck, trunk and upper limbs along with muscle function and the external loads experienced by the body. A coding system is used to generate an action list which indicates the level of intervention required to reduce the risks of injury due to physical loading on the operator.</p>
+            </div>
+
+            <form class="container">
+                
                 <div class="row">
                     <div class="col">
-                        <label for="state">Wrist twist</label>
-                        <select class="custom-select d-block w-100" id="state" required>
+                        <label for="state">Upper arms</label>
+                        <select class="custom-select d-block w-100" id="u_arms" required>
                             <option value="">Escolha...</option>
                             <option>1</option>
                             <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
                         </select>
                         <div class="invalid-feedback">
-                            Please provide a valid state.
+                            Favor inserir uma entrada válida.
                         </div>
-                    </div>
+                    </div>    
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="shoulder">
+                    <label class="custom-control-label" for="shoulder">Shoulder is raised</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="abducted">
+                    <label class="custom-control-label" for="abducted">Upper arm is abducted</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="leaning">
+                    <label class="custom-control-label" for="leaning">Leaning or supporting the weight of the arm</label>
                 </div>
 
                 <hr class="mb-4">
 
                 <div class="row">
                     <div class="col">
-                        <label for="state">Neck</label>
-                        <select class="custom-select d-block w-100" id="state" required>
+                        <label for="state">Lower arms</label>
+                        <select class="custom-select d-block w-100" id="l_arms" required>
                             <option value="">Escolha...</option>
                             <option>1</option>
                             <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
                         </select>
                         <div class="invalid-feedback">
-                            Please provide a valid state.
+                            Favor inserir uma entrada válida.
                         </div>
                     </div>
                 </div>
 
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="w_across">
+                    <label class="custom-control-label" for="w_across">Working acros the midline of the body or out to the side</label>
+                </div>
+
+                <hr class="mb-4">
+
                 <div class="row">
                     <div class="col">
-                        <label for="state">Trunk</label>
-                        <select class="custom-select d-block w-100" id="state" required>
+                        <label for="state">Wrist</label>
+                        <select class="custom-select d-block w-100" id="wrist" required>
+                            <option value="">Escolha...</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Favor inserir uma entrada válida.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="w_bent">
+                    <label class="custom-control-label" for="w_bent">Wrist is bent away from the midline</label>
+                </div>
+
+                <hr class="mb-4">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="state">Wrist twist</label>
+                        <select class="custom-select d-block w-100" id="w_twist" required>
+                            <option value="">Escolha...</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Favor inserir uma entrada válida.
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="mb-4">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="state">Neck</label>
+                        <select class="custom-select d-block w-100" id="neck" required>
                             <option value="">Escolha...</option>
                             <option>1</option>
                             <option>2</option>
@@ -216,10 +292,48 @@
                             <option>4</option>
                         </select>
                         <div class="invalid-feedback">
-                            Please provide a valid state.
+                            Favor inserir uma entrada válida.
                         </div>
                     </div>
                 </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="neck_twisting">
+                    <label class="custom-control-label" for="neck_twisting">Neck is twisting</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="neck_bending">
+                    <label class="custom-control-label" for="neck_bending">Neck is sie-bending</label>
+                </div>
+
+                <hr class="mb-4">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="state">Trunk</label>
+                        <select class="custom-select d-block w-100" id="trunk" required>
+                            <option value="">Escolha...</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Favor inserir uma entrada válida.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="trunk_twisting">
+                    <label class="custom-control-label" for="trunk_twisting">Neck is twisting</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="trunk_bending">
+                    <label class="custom-control-label" for="trunk_twisting">Neck is sie-bending</label>
+                </div>
+
+                <hr class="mb-4">
 
                 <div class="row">
                     <div class="col">
@@ -235,6 +349,37 @@
                     </div>
                 </div>
 
+                <hr class="mb-4">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="state">Force or load</label>
+                        <select class="custom-select d-block w-100" id="force" required>
+                            <option value="">Escolha...</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Favor inserir uma entrada válida.
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <p>Posture</p>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="p_static">
+                    <label class="custom-control-label" for="p_static">Posture is mainly static (held for longer than 1 min)</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="p_repeat">
+                    <label class="custom-control-label" for="p_repeat">Posture is repeated mor than 4 times per minute</label>
+                </div>
+
+                <hr class="mb-4">
+
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Gerar relatório RULA</button>
 
             </form>
 
