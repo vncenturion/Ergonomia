@@ -152,7 +152,7 @@
                 <p>Posture</p>
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="static">
-                    <label class="custom-control-label" for="static">1 or mor body parts are static (held for longer than 1 minute)</label>
+                    <label class="custom-control-label" for="static">1 or more body parts are static (held for longer than 1 minute)</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="repeat">
@@ -337,8 +337,8 @@
 
                 <div class="row">
                     <div class="col">
-                        <label for="state">Legs</label>
-                        <select class="custom-select d-block w-100" id="state" required>
+                        <label for="Legs">Legs</label>
+                        <select class="custom-select d-block w-100" id="Legs" required>
                             <option value="">Escolha...</option>
                             <option>1</option>
                             <option>2</option>
@@ -353,7 +353,7 @@
 
                 <div class="row">
                     <div class="col">
-                        <label for="state">Force or load</label>
+                        <label for="force">Force or load</label>
                         <select class="custom-select d-block w-100" id="force" required>
                             <option value="">Escolha...</option>
                             <option>0</option>
@@ -365,6 +365,7 @@
                             Favor inserir uma entrada válida.
                         </div>
                     </div>
+                    
                 </div>
                 <hr class="mb-4">
                 <p>Posture</p>
@@ -391,54 +392,179 @@
 
             <form class="container">
                 
+                <p class="lead">Variáveis mensuráveis</p>
+
                 <div class="row">
+
                     <div class="col">
-                        <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required>
+                        
+                        <label for="h_location">H - Horizontal location of the object relative to the body:</label>
+                        <input class="d-block w-100" type="number" id="h_location" name="h_location" min="0" required>
+
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <label for="h_location">H - Horizontal location of the object relative to the body:</label>
+                        <input class="d-block w-100" type="number" id="h_location" name="h_location" min="0" required>
+
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <label for="v_location">V - Vertical location of the object relative to the floor:</label>
+                        <input class="d-block w-100" type="number" id="v_location" name="v_location" min="0" required>
+
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <label for="v_location">V - Vertical location of the object relative to the floor:</label>
+                        <input class="d-block w-100" type="number" id="v_location" name="v_location" min="0" required>
+
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <label for="asymmetry">A - Asymmetry angle or twisting requirement:</label>
+                        <input class="d-block w-100" type="number" id="asymmetry" name="asymmetry" min="0" required>
+
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <label for="asymmetry">A - Asymmetry angle or twisting requirement:</label>
+                        <input class="d-block w-100" type="number" id="asymmetry" name="asymmetry" min="0" required>
+
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <label for="v_distance">D - Distance the object is moved vertically:</label>
+                        <input class="d-block w-100" type="number" id="v_distance" name="v_distance" min="0" required>
+
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <label for="frequency">F - Frequency and duration of lifting activity:</label>
+                        <input class="d-block w-100" type="number" id="frequency" name="frequency" min="0.2" max="15" required>
+
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <label for="coupling">C - Coupling or quality of the workers grip on the object:</label>
+                        <select class="custom-select d-block w-100" id="coupling" required>
                             <option value="">Escolha...</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
-                            <option>4</option>
                         </select>
+
                         <div class="invalid-feedback">
                             Please provide a valid state.
                         </div>
                     </div>
-                    
+
                 </div>
+
                 <div class="row">
+
                     <div class="col">
-                        <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required>
-                            <option value="">Choose...</option>
+
+                        <label for="duration">Dur - Duration:</label>
+                        <select class="custom-select d-block w-100" id="duration" required>
+                            <option value="">Escolha...</option>
                             <option>1</option>
                             <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option>8</option>
                         </select>
+
                         <div class="invalid-feedback">
                             Please provide a valid state.
                         </div>
                     </div>
-                    
+
                 </div>
+
+                <hr class="mb-4">
+
+                <p class="lead">Variáveis informadas</p>
+
                 <div class="row">
+
                     <div class="col">
-                        <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required>
-                            <option value="">Choose...</option>
-                            <option>California</option>
-                            <option>California</option>
-                            <option>California</option>
-                            <option>California</option>
-                        </select>
+
+                        <label for="a_weight">L(a) - Average weight of the objects lifted:</label>
+                        <input class="d-block w-100" type="number" id="a_weight" name="a_weight" min="0" required>
+
                         <div class="invalid-feedback">
                             Please provide a valid state.
                         </div>
                     </div>
-                    
+
                 </div>
+
+                <div class="row">
+
+                        <div class="col">
+
+                        <label for="max_weight">L(max) - Maximum weight of the objects lifted:</label>
+                        <input class="d-block w-100" type="number" id="max_weight" name="max_weight" min="0" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="mb-4">
+
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Gerar relatório NIOSH RWL & LI</button>
 
             </form>
 
@@ -449,12 +575,15 @@
     <footer class="footer mt-4 py-3 bg-dark">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-sm">
-                    <p class="lead"><img src="Imagens/unipe_logo (1).png" width="200p"></p>
+                
+                <div class="col-sm-7 text-center font-weight-light">
+                    <p class="small text-info mb-0 text-uppercase">Coordenação de Pós-graduação e educação continuada</p>
+                    <p class="small text-info mb-0 text-uppercase">Especialização em Engenharia de Segurança do Trabalho</p>
+                    <p class="small text-info mb-0 text-uppercase">Trabalho de conclusão de curso</p>
+                    <p class="small text-info mb-0 text-uppercase">João Pessoa, 2020</p>
                 </div>
-                <div class="col-md">
-                    <p class="text-light">Coordenação de Pós-graduação e educação continuada</p>
-                    <p class="text-light">Especialização em Engenharia de Segurança do Trabalho</p>
+                <div class="col-sm-5 text-center">
+                    <p class="lead"><img src="Imagens/unipe_logo (1).png" width="250p"></p>
                 </div>
             </div>
                         
