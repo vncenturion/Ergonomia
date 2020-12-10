@@ -7,14 +7,11 @@
     <meta name="author" content="Eng. Vinicius B. C. Centurion">
     <title>ANÁLISE POSTURAL: projeto</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-
-        html, body {
-            height: 100%;
-        }
-
+	
         .full-height {
-        height: 100%;
+        	height: 100%;
         }
 
         .bd-placeholder-img {
@@ -38,13 +35,22 @@
     <main role="main" class="full-height flex-shrink-0">
         
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="../index.html">AVALIAÇÃO POSTURAL OCUPACIONAL express®</a>
+            <a class="navbar-brand text-wrap" href="../index.php">AVALIAÇÃO POSTURAL OCUPACIONAL express®</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
         
             <div class="collapse navbar-collapse" id="navbarsExample01">
                 <ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../Pages/rula.php">Método RULA</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../Pages/reba.php">Método REBA</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../Pages/niosh.php">Método NIOSH</a>
+					</li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Pages/Projeto.html">Sobre o projeto</a>
                     </li>
@@ -52,7 +58,7 @@
                         <a class="nav-link" href="../Pages/Autoria.html">Autoria e orientação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Pages/Referências.html">Referências</a>
+                        <a class="nav-link" href="../Pages/Referencias.html">Referências</a>
                     </li>           
                 </ul>
             </div>
@@ -62,12 +68,17 @@
 
 
         <div class="container">
+
             <div class="py-5 text-center">
                 <img class="d-block mx-auto mb-4" src="../Imagens/project.svg" alt="" width="72" height="72">
                 <h2>O Projeto: avaliação postural express</h2>
-                <p class="lead">Informações sobre o desenvolvimento da aplicação e importância da ferramenta.</p>
             </div>
-            
+			<div class="py-3 text-center">
+				<p class="lead">O projeto tem por objetivo o desenvolvimento e disponibilização de uma aplicação para internet cuja finalidade é a elaboração rápida e facilitada de relatórios de avaliação postural ocupacional para profissional de segurança e saúde do trabalho.</p>
+				<p class="lead">A iniciativa partiu da necessidade de avaliação de riscos ergonômicos para os postos de trabalhos de inúmeras empresas, decorrente das atualizações das normas regulamentadores do trabalho, em especial as que avaliam os riscos ocupacionais.</p>
+				<p class="lead">De fato, prevê o item 1.4.1, b, I, da NR-01 ser dever do empregador "informar aos trabalhadores os riscos ocupacionais existentes nos locais de trabalhos". Inclusive, prescreve (em seu item 1.5.7.3.2, caput e alinea 'd') a elaboração de inventário de riscos ocupacionais com "dados da análise preliminar ou do monitoramento de exposições a agentes físicos, químicos e biológicos e os resultados da avaliação de ergonomia nos termos da NR-17.</p>
+				<p class="lead">O trabalho foi desenvolvido em âmbito de trabalho de conclusão de curso da Especialização em Engenharia de Segurança do Trabalho do Centro Universitário de João Pesssoa, concomitantemente com as atividade da disciplina de Programação Web do Curso de Graduação em Ciências da Computação da mesma instituição.</p>
+			</div>
 
         </div>
 
@@ -75,12 +86,16 @@
 
     <footer class="footer mt-4 py-3 bg-dark">
         <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <p class="lead"><img src="../Imagens/unipe_logo.png" width="45%"></p>
+            <div class="row align-items-center">
+                
+                <div class="col-sm-7 text-center font-weight-light">
+                    <p class="small text-light mb-0 text-uppercase">Coordenação de Pós-graduação e educação continuada</p>
+                    <p class="small text-light mb-0 text-uppercase">Especialização em Engenharia de Segurança do Trabalho</p>
+                    <p class="small text-light mb-0 text-uppercase">Trabalho de conclusão de curso</p>
+                    <p class="small text-light mb-0 text-uppercase">João Pessoa, 2020.</p>
                 </div>
-                <div class="col-sm">
-                    <p class="lead text-light">Especialização em Engenharia de Segurança do Trabalho</p>
+                <div class="col-sm-5 text-center">
+                    <span class="no-gutters"><img src="../Imagens/unipe_logo branco.png" width="250p"></span>
                 </div>
             </div>
                         
@@ -90,5 +105,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
